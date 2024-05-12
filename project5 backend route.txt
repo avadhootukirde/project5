@@ -1,0 +1,5 @@
+app.get('/api/random-category', (req, res) => {
+    const categories = ['Lunch', 'Dinner', 'Breakfast', 'Sushi'];
+    const randomCategory = categories[Math.floor(Math.random() * categories.length)];
+    res.json({ category: randomCategory });
+});

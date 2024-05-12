@@ -1,0 +1,9 @@
+async function redirectToRandomCategory() {
+    try {
+        const response = await fetch('/api/random-category');
+        const data = await response.json();
+        window.location.href = `/categories/${data.category}`;
+    } catch (error) {
+        console.error('Failed to fetch random category', error);
+    }
+}

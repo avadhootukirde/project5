@@ -1,0 +1,5 @@
+<div id="tiles">
+    <div onclick="redirectToRandomCategory()">Specials</div>
+    <div onclick="redirectToCategory('Menu')">Menu</div>
+    <div onclick="redirectToCategory('Map')">Map</div>
+</div>

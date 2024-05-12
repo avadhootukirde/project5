@@ -1,0 +1,9 @@
+function redirectToRandomCategory() {
+    const categories = ['Lunch', 'Dinner', 'Breakfast', 'Sushi'];
+    const randomCategory = categories[Math.floor(Math.random() * categories.length)];
+    window.location.href = `/categories/${randomCategory}`;
+}
+
+function redirectToCategory(categoryName) {
+    window.location.href = `/categories/${categoryName}`;
+}
